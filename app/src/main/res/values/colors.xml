@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8DABF0</color> <!--цвет шапки-->
+    <color name="colorPrimaryDark">@null</color> <!--цвет строки состояния-->
+    <color name="colorAccent">#ABA59B</color> <!--цвет подсказок и радио-->
+    <color name="colorPriority_high">#F08C7A</color>
+    <color name="colorPriority_medium">#F0BF4A</color>
+    <color name="colorPriority_low">#56F0AE</color>
+    <color name="colorBasic">#dfdfdf</color>
+    <color name="blue">#63DBF0</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#5E5E5E</color>
+</resources>

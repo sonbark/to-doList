@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <EditText
+        android:id="@+id/newTask_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        style="@android:style/Widget.EditText"
+        android:background="@drawable/rounded_frame"
+        android:hint="@string/newTask_name"
+        android:paddingHorizontal="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="26dp"
+        android:inputType="textCapSentences"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/newTask_description"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_frame"
+        android:hint="@string/newTask_description"
+        android:paddingHorizontal="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:inputType="textCapSentences"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="@string/priority"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"/>
+
+    <RadioGroup
+        android:id="@+id/priority"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_frame"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/priority_high"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="@color/gray"
+            android:theme="@style/priority_high" />
+
+        <RadioButton
+            android:id="@+id/priority_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="35dp"
+            android:paddingVertical="15dp"
+            android:textColor="@color/gray"
+            android:theme="@style/priority_medium" />
+
+        <RadioButton
+            android:id="@+id/priority_low"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingVertical="15dp"
+            android:textColor="@color/gray"
+            android:theme="@style/priority_low" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="@string/date"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"/>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_frame"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="save_click"
+        android:text="@string/button_save"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+</LinearLayout>
